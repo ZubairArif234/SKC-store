@@ -15,7 +15,11 @@ const LogApp = () => (
       span: 16,
     }}
     style={{
-      maxWidth: 600,
+      maxWidth: 800,
+      // backgroundColor:'pink',
+      // justifyContent:'flex-end',
+      alignItems: 'end',
+      margin: 10
     }}
     initialValues={{
       remember: true,
@@ -33,6 +37,12 @@ const LogApp = () => (
           message: 'Please input your username!',
         },
       ]}
+      style={{
+        // maxWidth: 900,
+        // backgroundColor:'purple',
+        width:600,
+        margin: 10
+      }}
     >
       <Input />
     </Form.Item>
@@ -46,6 +56,12 @@ const LogApp = () => (
           message: 'Please input your password!',
         },
       ]}
+      style={{
+        // maxWidth: 900,
+        // backgroundColor:'purple',
+        width:600,
+        margin: 10
+      }}
     >
       <Input.Password />
     </Form.Item>
