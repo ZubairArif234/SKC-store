@@ -2,3 +2,9 @@
     width: 100%;
     height: '500px';
 }
+.csatagorycard{
+    width: '260px';
+    background-color: yellow;
+    height:'300px' ;
+     margin:'20px'
+}

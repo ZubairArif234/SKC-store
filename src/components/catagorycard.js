@@ -1,14 +1,20 @@
 
-import '../App.css';
+import './index.css';
 
 
 
 function Catagorycard({img,name}) {
   return (
-    <div className="Catagorycard"  style={{backgroundColor:'red' , width:'250px', height:'300px' , margin:'20px'}}>
-      
-     <img src={img} style={{width:'250px', height:'250px'}}/>
-     <h3 style={{textAlign:'center'}}>{name}</h3>
+    <div className="catagorycardmain"  >
+      <div className="catagorycard">
+        <center>
+     <img src={img}  className="catagoryimg"/>
+     </center>
+     </div>
+     <center>
+
+     <button className='cattext'>{name}</button>
+     </center>
      
     </div>
   );
