@@ -1,5 +1,10 @@
 
 
+@font-face {
+    font-family:pacifico ;
+    src: url(../assets/Pacifico-Regular.ttf);
+}
+
 .catagorycard{
     width: 250px;
   
@@ -44,7 +49,9 @@ text-align: center;
 .aboutheading{
     text-align: center;
     color: white;
-    font-family: cursive;
+    font-family: pacifico;
+    word-spacing: 5px;
+    letter-spacing: 3px;
 }
 .contactmanagerbtn{
     width: 60%;

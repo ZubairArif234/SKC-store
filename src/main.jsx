@@ -14,7 +14,7 @@ import ContactManager from './components/contactmanager';
 import ContactDeveloper from './components/contactdeveloper';
 
 
-function App() {
+function Main() {
   return (
     <div className="App">
       <Headertags/>
@@ -43,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
