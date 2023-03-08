@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import './components/index.css';
-import LogApp from './components/login';
+
+import '../App.css';
+import '../components/index.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Headertags from './components/headertag';
-import CollapsibleExample from './components/navbar';
+import Headertags from '../components/headertag';
+import CollapsibleExample from '../components/navbar';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Slidercomp from './components/slider';
-import Catagorycard from './components/catagorycard';
-import HomeAboutus from './components/homeaboutus';
-import ContactManager from './components/contactmanager';
-import ContactDeveloper from './components/contactdeveloper';
+import Slidercomp from '../components/slider';
+import Catagorycard from '../components/catagorycard';
+import HomeAboutus from '../components/homeaboutus';
+import ContactManager from '../components/contactmanager';
+import ContactDeveloper from '../components/contactdeveloper';
 
 
 function Main() {

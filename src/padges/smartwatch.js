@@ -1,13 +1,13 @@
 
-import './App.css';
-import './components/index.css';
+import '../App.css';
+import '../components/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Headertags from './components/headertag';
-import CollapsibleExample from './components/navbar';
+import Headertags from '../components/headertag';
+import CollapsibleExample from '../components/navbar';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import Catagorycard from './components/catagorycard';
+import Catagorycard from '../components/catagorycard';
 
 
 

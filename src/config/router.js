@@ -1,9 +1,9 @@
 
 
 import { BrowserRouter,Route,Routes,Link,Navigate } from "react-router-dom";
-import Main from "../main";
+import Main from "../padges/main";
 import { Button, Result } from 'antd';
-import Smartwatch from "../smartwatch";
+import Smartwatch from "../padges/smartwatch";
 
 
 
