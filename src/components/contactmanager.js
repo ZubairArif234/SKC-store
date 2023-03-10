@@ -7,7 +7,7 @@ import './index.css';
 
 function ContactManager() {
   return (
-    <div className="headertags" style={{backgroundColor:'black', padding:'5px', margin:'20px',marginTop:'50px'}}>
+    <div className="headertags" id='contactuss' style={{backgroundColor:'black', padding:'5px', margin:'20px',marginTop:'50px'}}>
         <h1 className='aboutheading'>CONTACT</h1>
         <h4 className='aboutheading'>The Management</h4>
       <p className='abouttext' >SKC STORE is providing bset setvice to their customers. You get get in touch with the Management via Instagram.</p>

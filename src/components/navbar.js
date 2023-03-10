@@ -3,7 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
+import {HashLink} from 'react-router-hash-link'
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -13,20 +14,20 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to={'/'}>HOME</Nav.Link>
-            <Nav.Link as={Link} to={'/smartwatch'}>SMART WATCH </Nav.Link>
-            <Nav.Link as={Link} to={'/ringlight'}>RING LIGHT </Nav.Link>
-            <Nav.Link href="#powerbank">POWER BANKS </Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <Nav.Link as={HashLink} smooth to={'./#aboutuss'}>ABOUT US </Nav.Link>
+            <Nav.Link as={HashLink} smooth to={'./#contactuss'}>CONTACT US </Nav.Link>
+            {/* <Nav.Link href="#powerbank">POWER BANKS </Nav.Link> */}
+            <NavDropdown title="Catagories" id="collasible-nav-dropdown">
+              <NavDropdown.Item as={Link} to={'/smartwatch'}>SMART WATCH</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'/ringlight'}>
+              RING LIGHT 
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item as={Link} to={'/ringlight'}>POWER BANKS</NavDropdown.Item>
+              {/* <NavDropdown.Divider /> */}
+              {/* <NavDropdown.Item href="#action/3.4">
                 Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+              </NavDropdown.Item> */}
+            </NavDropdown>
           </Nav>
           {/* <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>

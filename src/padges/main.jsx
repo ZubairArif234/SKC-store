@@ -25,14 +25,14 @@ function Main() {
         <h2 style={{textAlign:'center'}}>SHOP BY CATEGORY</h2>
         <div style={{display:'flex' , flexWrap:'wrap' , justifyContent:'space-evenly'}}>
 
-        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123724_360x.png?v=1674812815'} name={'headphone'}/>
-        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123659_360x.png?v=1674812788'} name={'headphone'}/>
-        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123724_360x.png?v=1674812815'} name={'headphone'}/>
-        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123659_360x.png?v=1674812788'} name={'headphone'}/>
+        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123724_360x.png?v=1674812815'} name={'smartwatch'}/>
+        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123659_360x.png?v=1674812788'} name={'cat 2'}/>
+        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123724_360x.png?v=1674812815'} name={'cat 3'}/>
+        <Catagorycard img={'https://cdn.shopify.com/s/files/1/0710/1651/3813/collections/Screenshot_2023-01-25_123659_360x.png?v=1674812788'} name={'cat 4'}/>
         </div>
       </div>
       {/* catagories component end */}
-      <HomeAboutus/>
+      <HomeAboutus id='aboutuss'/>
       <ContactManager/>
       <ContactDeveloper/>
       <div style={{backgroundColor:'black'}}>
