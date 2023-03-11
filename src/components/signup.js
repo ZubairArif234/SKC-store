@@ -1,3 +1,5 @@
+
+
 import { Button, Checkbox, Form, Input } from 'antd';
 import { useState } from 'react';
 
@@ -8,7 +10,7 @@ const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
 };
 
-const LogApp = () => {
+const SignApp = () => {
   
   return(
   <Form
@@ -33,6 +35,7 @@ const LogApp = () => {
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
+
     <Form.Item
       label="Username"
       name="username"
@@ -40,6 +43,44 @@ const LogApp = () => {
         {
           required: true,
           message: 'Please input your username!',
+        },
+        
+      ]}
+      style={{
+        // maxWidth: 900,
+        // backgroundColor:'purple',
+        width:400,
+        margin: 10
+      }}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      label="Email"
+      name="email"
+      rules={[
+        {
+          required: true,
+          message: 'Please input your email!',
+        },
+        
+      ]}
+      style={{
+        // maxWidth: 900,
+        // backgroundColor:'purple',
+        width:400,
+        margin: 10
+      }}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      label="Phone"
+      name="phone"
+      rules={[
+        {
+          required: true,
+          message: 'Please input your phone no!',
         },
         
       ]}
@@ -97,4 +138,4 @@ const LogApp = () => {
   </Form>
   )
     };
-export default LogApp;
+export default SignApp;

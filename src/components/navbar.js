@@ -5,7 +5,25 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link  } from "react-router-dom";
 import {HashLink} from 'react-router-hash-link'
+
+
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import Logincomp from './login';
+import LogApp from './login';
+import SignApp from './signup';
+
+
+
 function CollapsibleExample() {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [logsign , setlogsign] = useState(false);
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
@@ -29,16 +47,75 @@ function CollapsibleExample() {
               </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
-          {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+          <Nav>
+            <Nav.Link href="#deets" style={{backgroundColor:'black' , width:'120px',textAlign:'center', borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(false)}}>login</Nav.Link>
+            <Nav.Link  href="#memes" style={{backgroundColor:'black' , width:'120px', marginLeft:'10px',textAlign:'center',borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(true)}}>
+              Sign up
             </Nav.Link>
-          </Nav> */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title >{logsign ? 'Sign up' : 'Login'}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {logsign?
+          <SignApp/>
+        :
+        <LogApp/>}
+          <center >
+
+     {logsign? 
+     <p>Already have an account <p style={{fontWeight:'bold'}} onClick={()=>setlogsign(false)}>LOGIN</p></p> 
+     : 
+     <p>Don't have an account <p style={{fontWeight:'bold'}} onClick={()=>setlogsign(true)}>SIGN UP</p></p> }
+    </center>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
     </Navbar>
   );
 }
 
 export default CollapsibleExample;
+
+
+
+
+// function Example() {
+//   const [show, setShow] = useState(false);
+
+//   const handleClose = () => setShow(false);
+//   const handleShow = () => setShow(true);
+
+//   return (
+//     <>
+//       <Button variant="primary" onClick={handleShow}>
+//         Launch demo modal
+//       </Button>
+
+//       <Modal show={show} onHide={handleClose}>
+//         <Modal.Header closeButton>
+//           <Modal.Title>Modal heading</Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+//         <Modal.Footer>
+//           <Button variant="secondary" onClick={handleClose}>
+//             Close
+//           </Button>
+//           <Button variant="primary" onClick={handleClose}>
+//             Save Changes
+//           </Button>
+//         </Modal.Footer>
+//       </Modal>
+//     </>
+//   );
+// }
