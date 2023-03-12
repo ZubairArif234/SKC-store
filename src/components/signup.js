@@ -22,11 +22,11 @@ const SignApp = () => {
       span: 16,
     }}
     style={{
-      maxWidth: 800,
+      maxWidth: 600,
       // backgroundColor:'pink',
       // justifyContent:'flex-end',
       alignItems: 'end',
-      margin: 10
+      // margin: 10
     }}
     initialValues={{
       remember: true,
@@ -49,8 +49,8 @@ const SignApp = () => {
       style={{
         // maxWidth: 900,
         // backgroundColor:'purple',
-        width:400,
-        margin: 10
+        // width:300,
+        // margin: 10
       }}
     >
       <Input />
@@ -68,8 +68,8 @@ const SignApp = () => {
       style={{
         // maxWidth: 900,
         // backgroundColor:'purple',
-        width:400,
-        margin: 10
+        // width:350,
+        // margin: 10
       }}
     >
       <Input />
@@ -87,8 +87,8 @@ const SignApp = () => {
       style={{
         // maxWidth: 900,
         // backgroundColor:'purple',
-        width:400,
-        margin: 10
+        // width:350,
+        // margin: 10
       }}
     >
       <Input />
@@ -106,8 +106,8 @@ const SignApp = () => {
       style={{
         // maxWidth: 900,
         // backgroundColor:'purple',
-        width:400,
-        margin: 10
+        // width:350,
+        // margin: 10
       }}
     >
       <Input.Password />

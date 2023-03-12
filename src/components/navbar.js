@@ -48,8 +48,8 @@ function CollapsibleExample() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets" style={{backgroundColor:'black' , width:'120px',textAlign:'center', borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(false)}}>login</Nav.Link>
-            <Nav.Link  href="#memes" style={{backgroundColor:'black' , width:'120px', marginLeft:'10px',textAlign:'center',borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(true)}}>
+            <Nav.Link href="#deets" style={{backgroundColor:'black' , width:'120px',textAlign:'center', marginLeft:'10px', marginTop:"5px",borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(false)}}>login</Nav.Link>
+            <Nav.Link  href="#memes" style={{backgroundColor:'black' , width:'120px', marginLeft:'10px',textAlign:'center',marginTop:"5px",borderRadius:'7px',color:'white'}} onClick={ ()=>{ handleShow() ;setlogsign(true)}}>
               Sign up
             </Nav.Link>
           </Nav>
