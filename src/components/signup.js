@@ -16,16 +16,16 @@ const SignApp = () => {
   <Form
     name="basic"
     labelCol={{
-      span: 8,
+      span: 18,
     }}
     wrapperCol={{
-      span: 16,
+      span: 26,
     }}
     style={{
-      maxWidth: 600,
+      // maxWidth: 600,
       // backgroundColor:'pink',
       // justifyContent:'flex-end',
-      alignItems: 'end',
+      // alignItems: 'end',
       // margin: 10
     }}
     initialValues={{
@@ -37,7 +37,7 @@ const SignApp = () => {
   >
 
     <Form.Item
-      label="Username"
+      // label="Username"
       name="username"
       rules={[
         {
@@ -53,10 +53,11 @@ const SignApp = () => {
         // margin: 10
       }}
     >
-      <Input />
+      <label>Username</label>
+      <Input style={{width:'100%'}} />
     </Form.Item>
     <Form.Item
-      label="Email"
+      // label="Email"
       name="email"
       rules={[
         {
@@ -72,10 +73,11 @@ const SignApp = () => {
         // margin: 10
       }}
     >
-      <Input />
+      <label>Email</label>
+      <Input style={{width:'100%'}} />
     </Form.Item>
     <Form.Item
-      label="Phone"
+      // label="Phone"
       name="phone"
       rules={[
         {
@@ -91,11 +93,12 @@ const SignApp = () => {
         // margin: 10
       }}
     >
-      <Input />
+      <label>Phone no</label>
+      <Input style={{width:'100%'}} />
     </Form.Item>
 
     <Form.Item
-      label="Password"
+      // label="Password"
       name="password"
       rules={[
         {
@@ -110,10 +113,11 @@ const SignApp = () => {
         // margin: 10
       }}
     >
-      <Input.Password />
+      <label>Password</label>
+      <Input.Password style={{width:'100%'}} />
     </Form.Item>
 
-    <Form.Item
+    {/* <Form.Item
       name="remember"
       valuePropName="checked"
       wrapperCol={{
@@ -122,16 +126,16 @@ const SignApp = () => {
       }}
     >
       <Checkbox>Remember me</Checkbox>
-    </Form.Item>
+    </Form.Item> */}
 
     <Form.Item
       wrapperCol={{
-        offset: 8,
-        span: 16,
+        offset: 2,
+        span: 30,
       }}
     >
-      <Button type="primary" htmlType="submit">
-        Login
+      <Button type="primary" htmlType="submit" style={{width:'90%',backgroundColor:'black'}}>
+        Sign up
       </Button>
     </Form.Item>
     

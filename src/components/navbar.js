@@ -67,9 +67,9 @@ function CollapsibleExample() {
           <center >
 
      {logsign? 
-     <p>Already have an account <p style={{fontWeight:'bold'}} onClick={()=>setlogsign(false)}>LOGIN</p></p> 
+     <p>Already have an account <p style={{fontWeight:'bold',cursor:'pointer'}} onClick={()=>setlogsign(false)}>LOGIN</p></p> 
      : 
-     <p>Don't have an account <p style={{fontWeight:'bold'}} onClick={()=>setlogsign(true)}>SIGN UP</p></p> }
+     <p>Don't have an account <p style={{fontWeight:'bold', cursor:'pointer'}} onClick={()=>setlogsign(true)}>SIGN UP</p></p> }
     </center>
         </Modal.Body>
         <Modal.Footer>

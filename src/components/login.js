@@ -14,13 +14,13 @@ const LogApp = () => {
   <Form
     name="basic"
     labelCol={{
-      span: 8,
+      span: 18,
     }}
     wrapperCol={{
-      span: 16,
+      span: 26,
     }}
     style={{
-      maxWidth: 600,
+      // maxWidth: 900,
       // backgroundColor:'pink',
       // justifyContent:'flex-end',
       // alignItems: 'end',
@@ -34,10 +34,11 @@ const LogApp = () => {
     autoComplete="off"
   >
     <Form.Item
-      label="Username"
+      // label="Username"
       name="username"
       rules={[
         {
+          type:'email',
           required: true,
           message: 'Please input your username!',
         },
@@ -50,11 +51,12 @@ const LogApp = () => {
         // margin: 10
       }}
     >
+      <lable>Email</lable>
       <Input />
     </Form.Item>
 
     <Form.Item
-      label="Password"
+      // label="Password"
       name="password"
       rules={[
         {
@@ -69,7 +71,8 @@ const LogApp = () => {
         // margin: 10
       }}
     >
-      <Input.Password />
+      <lable>Password</lable>
+      <Input.Password style={{width:'100%'}} />
     </Form.Item>
 
     <Form.Item
@@ -85,11 +88,11 @@ const LogApp = () => {
 
     <Form.Item
       wrapperCol={{
-        offset: 8,
-        span: 16,
+        offset: 2,
+        span: 30,
       }}
     >
-      <Button type="primary" htmlType="submit">
+      <Button type="primary" htmlType="submit" style={{width:'90%',backgroundColor:'black'}}>
         Login
       </Button>
     </Form.Item>
