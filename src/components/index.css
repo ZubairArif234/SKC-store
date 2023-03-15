@@ -69,6 +69,14 @@ text-align: center;
 .skcinstalink:hover{
     color: black;
 }
+.counterbtn{
+    background-color: #000000;
+    width: 30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    /* height: 20px; */
+}
 
 @media only screen and (max-width: 600px) {
     .catagorycard{
